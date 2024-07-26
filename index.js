@@ -45,7 +45,7 @@ bot.on('text', async (msg) => {
     const message = await bot.sendMessage(chatId, 'The bot has started, type /help for help', {})
     ids.push(message.message_id)
   } else if (msg.text === "/help") {
-    const message = await bot.sendMessage(chatId, '/add <Number1> <Number2> - add two numbers\n/sub <Number1> <Number2> - subtract two numbers\n/mul <Number1> <Number2> - multiply two numbers\n/div <Number1> <Number2> - divide two numbers\n/clearchat - delete chat history', {
+    const message = await bot.sendMessage(chatId, '/add <Number1> <Number2> - add two numbers\n/sub <Number1> <Number2> - subtract two numbers\n/mul <Number1> <Number2> - multiply two numbers\n/div <Number1> <Number2> - divide two numbers\n/clear - delete chat history', {
     })
     ids.push(message.message_id)
   } else if (msg.text.startsWith('/add')) {
